@@ -18,8 +18,7 @@ public class Main {
             PrestamosDAOImpl prestamosDAO = new PrestamosDAOImpl(connection);
             DevolucionesDAOImpl devolucionesDAO = new DevolucionesDAOImpl(connection);
 
-            // ===================== ESTUDIANTES =====================
-            // Ya existen 5 en Docker, agregamos 5 más
+
             estudianteDAO.crear(new Estudiante(0, 20241006, "Valentina Cruz", "Ingenieria de Sistemas", 3, "vcruz@ucundinamarca.edu.co"));
             estudianteDAO.crear(new Estudiante(0, 20241007, "Andres Mora", "Ingenieria Industrial", 2, "amora@ucundinamarca.edu.co"));
             estudianteDAO.crear(new Estudiante(0, 20241008, "Camila Perez", "Contaduria Publica", 4, "cperez@ucundinamarca.edu.co"));
@@ -31,8 +30,7 @@ public class Main {
                 System.out.println(e);
             }
 
-            // ===================== PRESTAMOS =====================
-            // Ya existen 4 en Docker, agregamos 5 más
+
             prestamosDAO.crear(new Prestamos(0, 1, 3, "2026-05-14 09:00:00", null, "Pedro Lopez", "Activo"));
             prestamosDAO.crear(new Prestamos(0, 2, 4, "2026-05-15 10:30:00", "2026-05-16 12:00:00", "Ana Ruiz", "Devuelto"));
             prestamosDAO.crear(new Prestamos(0, 3, 1, "2026-05-16 08:00:00", null, "Carlos Vega", "Activo"));
@@ -44,8 +42,7 @@ public class Main {
                 System.out.println(p);
             }
 
-            // ===================== DEVOLUCIONES =====================
-            // Agregamos 5 devoluciones
+
             devolucionesDAO.crear(new Devoluciones(0, 1, "2026-05-12 10:00:00", "Bueno", "Sin daños"));
             devolucionesDAO.crear(new Devoluciones(0, 3, "2026-05-11 18:00:00", "Regular", "Pantalla rayada"));
             devolucionesDAO.crear(new Devoluciones(0, 6, "2026-05-16 12:00:00", "Bueno", "Sin daños"));
