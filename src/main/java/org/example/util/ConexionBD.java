@@ -6,7 +6,7 @@ import java.sql.*;
 
 public class ConexionBD {
 
-    private static final String URL = "jdbc:mysql://localhost:3312/LAVADERO";
+    private static final String URL = "jdbc:mysql://localhost:3319/PRESTAMO";
     private static final String USUARIO = "root";
     private static final String CONTRASENA = "1234";
 
